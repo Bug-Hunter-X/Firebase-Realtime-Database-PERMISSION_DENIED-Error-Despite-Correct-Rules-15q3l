@@ -1,0 +1,1 @@
+The Firebase Realtime Database sometimes throws a `PERMISSION_DENIED` error even when the security rules appear to be correctly configured.  This often happens when there's a discrepancy between the client's authentication state and the security rules' expectations.  For example, a rule might check `auth.uid` but the client isn't properly authenticated or the UID doesn't match.
